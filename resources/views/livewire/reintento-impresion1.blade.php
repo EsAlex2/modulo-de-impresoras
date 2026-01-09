@@ -3,8 +3,8 @@
     <label class="card-header">Impresora con error</label>
     <select id="impresoraSelect" class="form-select">
       <option value="" disabled selected>Seleccione...</option>
-      @foreach ( $impresoras_manuales as $id => $impresora )
-      <option value="{{ $id }}">{{ $impresora }}</option>
+      @foreach ($impresoras_manuales as $id => $impresora)
+        <option value="{{ $id }}">{{ $impresora }}</option>
       @endforeach
     </select>
   </div>
@@ -12,8 +12,8 @@
     <label class="card-header">Reintento de Impresion</label>
     <select id="impresoraSelect" class="form-select">
       <option value="" disabled selected>Seleccione...</option>
-      @foreach ( $impresoras_manuales as $id => $impresora )
-      <option value="{{ $id }}">{{ $impresora }}</option>
+      @foreach ($impresoras_manuales as $id => $impresora)
+        <option value="{{ $id }}">{{ $impresora }}</option>
       @endforeach
     </select>
   </div>
