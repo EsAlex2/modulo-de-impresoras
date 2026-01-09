@@ -100,7 +100,7 @@
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel4">Reintento de Impresiones</h5>
+          <h5 class="modal-title" id="exampleModalLabel4">Reimpresion Manual</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -115,12 +115,12 @@
   </div>
   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasEnd1" aria-labelledby="offcanvasEndLabel">
     <div class="offcanvas-header">
-      <h5 id="offcanvasEndLabel" class="offcanvas-title">Impresion Automatica</h5>
+      <h5 id="offcanvasEndLabel" class="offcanvas-title">Reimpresion Automatica</h5>
       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body my-auto mx-0 grow-0">
       <div class="impresionesAutomaticas">
-
+        <livewire:reintento-impresion2>
       </div>
       <div class="modal-footer">
         <button wire:click="" type="button" class="btn btn-primary mb-5 d-grid w-100">Carga de Impresoras</button>
