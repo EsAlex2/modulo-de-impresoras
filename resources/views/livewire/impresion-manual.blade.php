@@ -15,7 +15,6 @@
             <h5 style="text-align: center; padding: 22px 0 0 0;">Numero de Licencias a Imprimir</h5>
             <input type="search" class="form-control" placeholder="Buscar..." aria-label="Search..."
               style="width: 50%; margin: 20px " />
-
           </div>
           <div class="card-body">
             <div class="row g-3">

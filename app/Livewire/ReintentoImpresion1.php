@@ -13,6 +13,13 @@ class ReintentoImpresion1 extends Component
     '4' => 'Impresora 4'
   ];
 
+  public $numeroDocumentos = [
+    '0' => '1472583694',
+    '1' => '7893214564',
+    '2' => '0831269754',
+    '3' => '5648973010',
+  ];
+
   public $gradosDelLicencia = [
     '2' => 'Licencia 2da Grado',
     '3' => 'Licencia 3er Grado',
