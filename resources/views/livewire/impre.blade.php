@@ -13,7 +13,7 @@
 <div class="row mb-12 g-6">
   <div class="col-md-6 col-lg-4">
     <div class="card h-100">
-      <img class="card-img-top" src="{{asset('assets/img/elements/11.jpg')}}" alt="Card image cap" />
+      <img class="card-img-top" src="{{asset('assets/img/elements/17.png')}}" alt="Card image cap" />
       <div class="card-body">
         <h5 class="card-title">Impresion Manual</h5>
         <p class="card-text">
@@ -30,7 +30,7 @@
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel4">Licencias Laminadas</h5>
+          <h5 class="modal-title" id="exampleModalLabel4">Carga de Informacion Manual</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">

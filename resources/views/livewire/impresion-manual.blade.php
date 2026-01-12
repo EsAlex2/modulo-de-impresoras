@@ -11,39 +11,55 @@
       <!---Rango de licencias a imprimir a nivel nacional por oficina---->
       <div class="col-lg-12">
         <div class="container" >
-          <h5 style="text-align: center; padding: 10px 0 0 0;">Numero de Licencias a Imprimir</h5>
-          <div class="container-lg justify-content-evenly" style="display: flex; margin: 5px 0 5px 0;">
+          <h5 style="text-align: center; padding: 25px 0 10px 0;">Numero de Licencias a Imprimir</h5>
+          <div class="container justify-content-around" style="display: flex; margin: 10px;">
             <input type="search" class="form-control" placeholder="Buscar..." aria-label="Search..."
-              style="width: 60%;" wire:model.live='campo' />
+              style="width: 70%;" wire:model.live='campo' />
               <button type="submit" class="btn btn-primary">Buscar Tramite</button>
           </div>
-          @error('campo')
-                  <p class="error">{{ $message }}</p>
-                @enderror
+            @error('campo')
+              <span class="error">{{ $message }}</span>
+            @enderror
           <div class="card-body">
             <div class="row g-3">
-              <div class="table-responsive text-nowrap pt-5">
+              <div class="tableErrors">
+                <h5 style="text-align: center; padding: 10px 0 10px 0;">Licencias para cargar</h5>
                 <table class="table">
                   <thead class="table-light">
-                    <th>Grado de Licencias</th>
-                    <th>Años de Vigencia</th>
+                    <th>Numero de Documento</th>
+                    <th>Grado de Licencia</th>
+                    <th>Fecha de Errores</th>
                     <th>Estatus</th>
+                    <th><input class="form-check-input" type="checkbox" value="" id="defaultCheck1" /></th>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>{{ $gradosDelLicencia[2]}}</td>
-                      <td>10 años</td>
-                      <td><span class="badge bg-label-primary me-1">En Proceso</span></td>
+                      <td>{{ $numeroDocumentos[0] }}</td>
+                      <td>{{ $gradosDelLicencia[2] }}</td>
+                      <td>09-01-2026 02:17:30 PM</td>
+                      <td><span class="badge rounded-pill bg-label-danger">Error</span></td>
+                      <td><input class="form-check-input" type="checkbox" value="" id="defaultCheck1" /></td>
                     </tr>
                     <tr>
+                      <td>{{ $numeroDocumentos[1] }}</td>
                       <td>{{ $gradosDelLicencia[3] }}</td>
-                      <td>5 años</td>
-                      <td><span class="badge bg-label-success me-1">Completado</span></td>
+                      <td>03-01-2026 11:01:00 AM</td>
+                      <td><span class="badge rounded-pill bg-label-danger">Error</span></td>
+                      <td><input class="form-check-input" type="checkbox" value="" id="defaultCheck1" /></td>
                     </tr>
                     <tr>
+                      <td>{{ $numeroDocumentos[2] }}</td>
                       <td>{{ $gradosDelLicencia[4] }}</td>
-                      <td>10 años</td>
-                      <td><span class="badge bg-label-warning me-1">Pendiente</span></td>
+                      <td>01-12-2025 07:50:24 PM</td>
+                      <td><span class="badge rounded-pill bg-label-danger">Error</span></td>
+                      <td><input class="form-check-input" type="checkbox" value="" id="defaultCheck1" /></td>
+                    </tr>
+                    <tr>
+                      <td>{{ $numeroDocumentos[3] }}</td>
+                      <td>{{ $gradosDelLicencia[5] }}</td>
+                      <td>05-01-2026 03:10:00 PM</td>
+                      <td><span class="badge rounded-pill bg-label-danger">Error</span></td>
+                      <td><input class="form-check-input" type="checkbox" value="" id="defaultCheck1" /></td>
                     </tr>
                   </tbody>
                 </table>
@@ -56,6 +72,6 @@
   </div>
   <div class="modal-footer">
     <button type="button" class="btn btn-label-secondary" data-bs-dismiss="modal">Cerrar</button>
-    <button type="button" class="btn btn-primary">Cargar Impresora</button>
+    <button type="button" class="btn btn-primary" wire:click="">Cargar Impresora</button>
   </div>
 </form>

@@ -7,6 +7,26 @@ use Livewire\Component;
 class ImpresionManual extends Component
 {
   public $campo;
+  public $impresoras = [
+    '1' => 'Impresora 1',
+    '2' => 'Impresora 2',
+    '3' => 'Impresora 3',
+    '4' => 'Impresora 4',
+  ];
+
+  public $numeroDocumentos = [
+    '0' => '1472583694',
+    '1' => '7893214564',
+    '2' => '0831269754',
+    '3' => '5648973010',
+  ];
+
+  public $gradosDelLicencia = [
+    '2' => 'Licencia 2da Grado',
+    '3' => 'Licencia 3er Grado',
+    '4' => 'Licencia 4to Grado',
+    '5' => 'Licencia 5to Grado',
+  ];
 
   protected $rules = [
     'campo' => 'required|min:5|max:10|regex:/^\d+$/',
@@ -17,22 +37,6 @@ class ImpresionManual extends Component
     'campo.regex' => 'Solo debe recibir datos numericos',
     'campo.max:10' => 'Maximo 10 caracteres',
     'campo.min:5' => 'Minimo 10 caracteres',
-  ];
-
-  public $impresoras = [
-    '1' => 'Impresora 1',
-    '2' => 'Impresora 2',
-    '3' => 'Impresora 3',
-    '4' => 'Impresora 4',
-  ];
-
-  public $selectedImpresora = null;
-
-  public $gradosDelLicencia = [
-    '2' => 'Licencia 2da Grado',
-    '3' => 'Licencia 3er Grado',
-    '4' => 'Licencia 4to Grado',
-    '5' => 'Licencia 5to Grado',
   ];
 
   public function updated($propertyName)
