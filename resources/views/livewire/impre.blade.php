@@ -36,10 +36,6 @@
         <div class="modal-body">
           <livewire:impresion-manual>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-label-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button wire:click="cargarImpresora" class="btn btn-primary">Cargar Impresora</button>
-        </div>
       </div>
     </div>
   </div>
