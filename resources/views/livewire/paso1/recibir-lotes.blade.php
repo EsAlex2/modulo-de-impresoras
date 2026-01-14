@@ -37,7 +37,7 @@
             </div>
             <label class="col-sm-1 col-form-label" for="nombres">Fecha de Registro</label>
             <div class="col-sm-5">
-              <input class="form-control" type="datetime-local"  id="html5-datetime-local-input" />
+              <input class="form-control" type="date"  id="html5-datetime-local-input" />
             </div>
           </div>
           <div class="row justify-content-end">
